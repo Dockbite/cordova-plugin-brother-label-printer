@@ -14,12 +14,7 @@ Already bundled is the following version: v3.0.14 (05/09/2019) which is in the `
 In your Cordova project, run the following command to install the plugin.
 
 ```
-cordova plugin add git+https://github.com/MenelicSoftware/cordova-plugin-brother-label-printer
-```
-or
-
-```
-cordova plugin add cordova-plugin-brother-label-printer
+cordova plugin add git+https://github.com/Dockbite/cordova-plugin-brother-label-printer.git
 ```
 
 And then read [usage](#usage) below.

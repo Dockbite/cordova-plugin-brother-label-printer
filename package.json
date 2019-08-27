@@ -14,7 +14,7 @@
   },
   "main": "dist/index.js",
   "cordova": {
-    "id": "cordova-plugin-brother-label-printer",
+    "id": "@dockbite/cordova-plugin-brother-label-printer",
     "platforms": [
       "android",
       "ios"
