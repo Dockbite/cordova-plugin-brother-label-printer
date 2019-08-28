@@ -2,6 +2,10 @@
     "include": [
         "./api/**/*"
     ],
+    "exclude": [
+        "./dist/**/*",
+        "./www/**/*"
+    ],
     "compilerOptions": {
         "declaration": true,
         "module": "commonjs",
