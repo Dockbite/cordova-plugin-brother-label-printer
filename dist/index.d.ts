@@ -32,4 +32,6 @@ export interface Printer {
 }
 export declare function findNetworkPrinters(): Promise<Printer[]>;
 export declare function setPrinter(printer: Printer, paperLabel: PaperLabel): Promise<void>;
-export declare function printLabel(base64Image: string): Promise<void>;
+export declare function printLabel(base64Image: string): Promise<{
+    result: string;
+}>;

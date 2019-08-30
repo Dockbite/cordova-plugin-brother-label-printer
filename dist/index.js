@@ -37,7 +37,14 @@ function setPrinter(printer, paperLabel) {
 exports.setPrinter = setPrinter;
 function printLabel(base64Image) {
     return new Promise((resolve, reject) => {
-        cordovaPrinterApi.printViaSDK(base64Image, resolve, reject);
+        cordovaPrinterApi.printViaSDK(base64Image, (status) => {
+            if (status.result === 'ERROR_NONE') {
+                resolve(status);
+            }
+            else {
+                reject(new Error(status.result));
+            }
+        }, reject);
     });
 }
 exports.printLabel = printLabel;
